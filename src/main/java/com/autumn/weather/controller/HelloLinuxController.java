@@ -1,4 +1,5 @@
-package com.autumn.weacher.controller;
+package com.autumn.weather.controller;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,5 @@ public class HelloLinuxController {
     public String helloLinux() {
         return "helloLinux";
     }
-
 
 }

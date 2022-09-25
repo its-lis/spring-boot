@@ -1,4 +1,4 @@
-package com.autumn.weacher;
+package com.autumn.weather;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
