@@ -2,16 +2,17 @@ server:
   port: 80
 
 spring:
-  datasource:
+  datasource: #mysql数据源
     url: jdbc:mysql://47.92.101.125:3306/spring-boot?serverTimezone=GMT%2B8
     username: root
     password: 216084lI.
     driver-class-name: com.mysql.cj.jdbc.Driver
-  thymeleaf:
-    check-template: false
+  thymeleaf: #禁用模板缓存，可以实时观察html变化
+    cache: false
+
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.autumn.weather.entity
+  mapper-locations: classpath:mapper/*.xml #XML文件映射路径
+  type-aliases-package: com.autumn.weather.entity #实体类所在的位置
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #用于控制台打印sql语句
     map-underscore-to-camel-case: true
