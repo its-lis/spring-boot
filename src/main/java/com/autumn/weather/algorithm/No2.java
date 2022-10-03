@@ -1,5 +1,7 @@
 package com.autumn.weather.algorithm;
 
+import org.junit.jupiter.api.Test;
+
 /**
  * 给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。
  * 回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
@@ -20,7 +22,8 @@ package com.autumn.weather.algorithm;
  * 解释：从右向左读, 为 01 。因此它不是一个回文数。
  */
 public class No2 {
-    public static void main(String[] args) {
+    @Test
+    void isPalindrome() {
         System.out.println(isPalindrome1(12340432));
     }
 
