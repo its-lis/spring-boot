@@ -27,23 +27,23 @@ public class AvatarDownloadController {
             out = response.getOutputStream();
             byte buffer[] = new byte[1024];
             int len = 0;
-            log.info("开始读取！！！");
+            log.info("开始读取！！！----------start");
             while ((len = in.read(buffer)) > 0) {
                 out.write(buffer, 0, len);
             }
-            log.info("读取结束！！！");
+            log.info("读取结束！！！----------end");
         } catch (IOException e) {
-            log.error("读取出错啦！！！");
+            log.error("读取出错啦！！！----------start");
             e.printStackTrace();
-            log.error("读取出错啦！！！");
+            log.error("读取出错啦！！！----------end");
         } finally {
             try {
                 in.close();
                 out.close();
             } catch (IOException e) {
-                log.error("流关闭出错啦！！！");
+                log.error("流关闭出错啦！！！----------start");
                 e.printStackTrace();
-                log.error("流关闭出错啦！！！");
+                log.error("流关闭出错啦！！！----------end");
             }
 
         }
