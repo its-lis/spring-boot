@@ -25,7 +25,7 @@ public class AvatarDownloadController {
         OutputStream out = null;
         try {
             response.setHeader("content-disposition","attachment;filename=" + URLEncoder.encode("avatar.jpg", "UTF-8"));
-            ClassPathResource classPathResource = new ClassPathResource("static//avatar/avatar.jpg");
+            ClassPathResource classPathResource = new ClassPathResource("static/avatar/avatar.jpg");
             in = classPathResource.getInputStream();
             out = response.getOutputStream();
             byte buffer[] = new byte[1024];
