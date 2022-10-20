@@ -6,4 +6,11 @@
     <select id="searchUserMapper" resultType="com.autumn.weather.entity.User">
         select * from user
     </select>
+
+    <delete id="truncateUser">
+        truncate table user;
+        truncate table test;
+    </delete>
+
 </mapper>
+

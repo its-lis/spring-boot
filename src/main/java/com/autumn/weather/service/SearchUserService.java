@@ -4,4 +4,6 @@ import com.autumn.weather.entity.User;
 
 public interface SearchUserService {
     User searchUser();
+
+    int truncateTestUser();
 }

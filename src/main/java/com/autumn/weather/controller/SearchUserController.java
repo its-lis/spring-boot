@@ -17,6 +17,8 @@ public class SearchUserController {
     @ResponseBody
     @GetMapping("/searchUser")
     public User searchUser() {
+        int i = service.truncateTestUser();
+        System.out.println(i);
         return service.searchUser();
     }
 }

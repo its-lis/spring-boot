@@ -16,4 +16,9 @@ public class SearchUserServiceImpl implements SearchUserService {
     public User searchUser() {
         return mapper.searchUserMapper();
     }
+
+    @Override
+    public int truncateTestUser() {
+        return mapper.truncateUser();
+    }
 }
